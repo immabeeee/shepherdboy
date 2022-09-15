@@ -4,7 +4,7 @@
 
 [![Logo](https://raw.githubusercontent.com/immabeeee/shepherdboy/db79beeb63990960910f17514a05d3e86ddf67d2/shepherdboy-org/apps/shepherdboy-ui/src/assets/images/logo.svg)](https://github.com/immabeeee/shepherdboy/)
 
-<a name="screenshot1" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png?raw=true" alt="Screenshot #1" style="width:400px;height:200px"/>
+<div style="display: flex; gap: 10px"><a name="screenshot1" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png?raw=true" alt="Screenshot #1" style="width:400px;height:200px"/>
 
 <a name="screenshot2" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/2.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/2.png?raw=true" alt="Screenshot #2" style="width:400px;height:200px"/>
 
@@ -12,7 +12,7 @@
 
 <a name="screenshot4" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/4.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/4.png?raw=true" alt="Screenshot #4" style="width:400px;height:200px"/>
 
-<a name="screenshot5" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/5.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/5.png?raw=true" alt="Screenshot #5" style="width:400px;height:200px"/>
+<a name="screenshot5" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/5.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/5.png?raw=true" alt="Screenshot #5" style="width:400px;height:200px"/></div>
 
 Before you start , it's a good idea to look in the documentation folder. There you will find a video file with a presentation of the application and postman collections
 
