@@ -1,0 +1,144 @@
+{
+  "NAVBAR": {
+    "HOME": "Głowna",
+    "OFFER": "Nasze produkty",
+    "ORDER_REGISTRY": "Zamówienia"
+  },
+  "HOME": {
+    "TITLE": "x"
+  },
+  "OFFER": {
+    "TITLE": "Oscypki",
+    "OSCYPEK_LIST": {
+      "EMPTY": "Nie ma żadnych oscypków",
+      "FILTERS": {
+        "SIZE": "Wielkość",
+        "TYPE": "Typ"
+      }
+    },
+    "OSCYPEK_ITEM": {
+      "LEFT": "Pozostało"
+    },
+    "ORDER_SUMMARY": {
+      "TITLE": "Podsumwanie",
+      "PRODUCTS": "Produktów w koszyku",
+      "COST": "o wartości",
+      "TOOLTIP": "Kliknij aby sprawdzić zamówienie"
+    },
+    "ORDER_DETAILS_SUMMARY": {
+      "TITLE": "Twoje zamówinie",
+      "FORM": {
+        "QUANTITY": {
+          "LABEL": "Ilość",
+          "PLACEHOLDER": "np. 2"
+        }
+      },
+      "MENU": {
+        "REMOVE": {
+          "LABEL": "Usuń",
+          "ARIA_LABEL": "Przycisk do usuwania z ikoną"
+        }
+      },
+      "LIST": {
+        "EMPTY": "Nie masz żadnych produktów dodanych do koszyka",
+        "ORDER_ITEM": {
+          "ADDITIVES_LIST": {
+            "EMPTY": "Nie masz żadnych dodatków do oscypka"
+          }
+        }
+      }
+    },
+    "ORDER_DETAILS_SHIPPING": {
+      "TITLE": "Dane do wysyłki",
+      "FORM": {
+        "ZIP_CODE_INVALID": "Kod pocztowy nie jest poprawny",
+        "REQUIRED": "To pole jest wymagane",
+        "DISABLED": "Wypełnij formularz wysyłki",
+        "SAVE": "Zapisz",
+        "EDIT": "Edytuj",
+        "FIRST_NAME": {
+          "LABEL": "Imię",
+          "PLACEHOLDER": "np. Lukasz"
+        },
+        "LAST_NAME": {
+          "LABEL": "Nazwisko",
+          "PLACEHOLDER": "np. Kordiak"
+        },
+        "CITY": {
+          "LABEL": "Miasto",
+          "PLACEHOLDER": "np. Wroclaw"
+        },
+        "STREET": {
+          "LABEL": "Ulica",
+          "PLACEHOLDER": "np. Piłsudskiego"
+        },
+        "ZIP_CODE": {
+          "LABEL": "Kod pocztowy",
+          "PLACEHOLDER": "np. 50-004"
+        },
+        "HOUSE_NUMBER": {
+          "LABEL": "Numer domu",
+          "PLACEHOLDER": "np. 50a"
+        },
+        "APARTMENT_NUMBER": {
+          "LABEL": "Number mieszkania",
+          "PLACEHOLDER": "np. 12"
+        }
+      }
+    },
+    "ADDITIVE_DIALOG": {
+      "TITLE": "Wybierz dodatek",
+      "DESCRIPTION": "Wybierz swój ulubiony dodatek, polecamy Pesto z czosnku niedźwiedziego 🥰",
+      "ADD": "Dodaj",
+      "ADD_DISABLED_TOOLTIP": "Musisz wybrać przynajmniej jeden dodatek",
+      "CLOSE": "Bez dodatku"
+    },
+    "ORDER": {
+      "LABEL": "Zamów teraz",
+      "DISABLED": "Musisz wypełnić formularz wysyłki oraz dodać do koszyka przynajmniej jeden produkt"
+    }
+  },
+  "ORDER": {
+    "ORDER_LIST": {
+      "TITLE": "Zamówienia",
+      "HEADER": {
+        "POSITION": "Lp.",
+        "CREATEDAT": "Data utworzenia",
+        "UPDATEDAT": "Data ostatniej edycji",
+        "STATUS": "Status",
+        "ITEMS_AMOUNT": "Ilość",
+        "ITEMS_QUANTITY": "Suma",
+        "SIZE": "Rozmiar",
+        "TYPE": "Typ",
+        "CITY": "Miasto"
+      },
+      "FILTERS": {
+        "CITY": "Miasto",
+        "CITY_PLACEHOLDER": "Np. Wroclaw",
+        "TYPE": "Typ",
+        "SIZE": "Rozmiar"
+      },
+      "MENU": {
+        "DETAILS": {
+          "ARIA_LABEL": "Przycisk do podglądu szczegółów z ikoną"
+        }
+      }
+    },
+    "ORDER_DETAILS_DIALOG": {
+      "TITLE": "Szczegóły zamówienia",
+      "DESCRIPTION": "Zamówione oscypki z dodatkami oraz szczegóły wysyłki",
+      "CLOSE": "Zamknij"
+    }
+  },
+  "clear": "Wyczyść",
+  "No image": "Brak zdjęcia",
+  "large": "Duży",
+  "medium": "Średni",
+  "small": "Mały",
+  "nonsmoked": "Niewędzony",
+  "smoked": "Wędzony",
+  "NEW": "Nowe",
+  "APPROVED": "Zatwierdzone",
+  "REJECTED": "Odrzucone",
+  "ITEMS_PER_PAGE_LABEL": "Elementów na stronie:"
+}

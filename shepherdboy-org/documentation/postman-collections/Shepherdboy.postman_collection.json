@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "cdc89b3e-fa03-4996-a7d2-d3545a497bac",
+		"name": "Shepherdboy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Inventory",
+			"item": [
+				{
+					"name": "oscypek",
+					"item": [
+						{
+							"name": "createItem",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Smoked Oscypek S\",\r\n    \"size\": \"small\",\r\n    \"type\": \"smoked\",\r\n    \"price\": \"14.99\",\r\n    \"availableAmount\": 1000,\r\n    \"group\": \"oscypek\",\r\n    \"additiveIds\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/inventory/oscypek",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"inventory",
+										"oscypek"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteItem",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/inventory/oscypek/af468799-ae60-4b07-9037-405319585b25",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"inventory",
+										"oscypek",
+										"af468799-ae60-4b07-9037-405319585b25"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateItem",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"lorem\",\r\n    \"size\": \"large\",\r\n    \"type\": \"nonsmoked\",\r\n    \"price\": \"33.99\",\r\n    \"availableAmount\": 1000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/inventory/oscypek/af468799-ae60-4b07-9037-405319585b25",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"inventory",
+										"oscypek",
+										"af468799-ae60-4b07-9037-405319585b25"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findList",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "additive",
+					"item": [
+						{
+							"name": "createItem",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "findItem",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "updateItem",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "findList",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "createOrder",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientDetails\": {\r\n        \"city\": \"Wrocałw\",\r\n        \"zipCode\": \"58-250\",\r\n        \"street\": \"Długa\",\r\n        \"houseNumber\": \"18\",\r\n        \"apartmentNumber\": \"20\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"oscypek\": {\r\n                \"id\": \"346eb4ba-516b-41cf-93ea-9922f1a91b63\",\r\n                \"quantity\": 2\r\n            },\r\n            \"additives\": [\r\n                {\r\n                    \"id\": \"45f44d54-c9b4-431c-8c7a-e5567b58b2f8\",\r\n                    \"quantity\": 2\r\n                },\r\n                 {\r\n                    \"id\": \"0706d96d-83cb-420a-8a06-3ec03c7572f4\",\r\n                    \"quantity\": 1\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/order",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"order"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "findList",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						},
+						{
+							"name": "findOrderItems",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,29 @@
+<ng-container *ngIf="listQuery$ | async"></ng-container>
+<ng-container *ngIf="filters$ | async"></ng-container>
+
+<section class="container">
+    <form [formGroup]="formGroup">
+        <mat-form-field class="org-select" appearance="fill">
+            <mat-label data-test-id="org-oscypek-list-filters-type-label">{{'OFFER.OSCYPEK_LIST.FILTERS.TYPE' |
+                translate}}
+            </mat-label>
+            <mat-select formControlName="type" name="type" panelClass="org-select-panel"
+                data-test-id="org-oscypek-list-filters-type-select">
+                <mat-option *ngFor="let type of types" [value]="type.value">
+                    {{type.viewValue | translate}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="org-select" appearance="fill">
+            <mat-label data-test-id="org-oscypek-list-filters-size-label">{{'OFFER.OSCYPEK_LIST.FILTERS.SIZE' |
+                translate}}</mat-label>
+            <mat-select formControlName="size" name="size" panelClass="org-select-panel"
+                data-test-id="org-oscypek-list-filters-size-select">
+                <mat-option *ngFor="let size of sizes" [value]="size.value">
+                    {{size.viewValue | translate}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+</section>
+

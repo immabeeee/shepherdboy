@@ -1,0 +1,25 @@
+<div class="container" data-test-id="org-oscypek-list-container">
+    <div class="header-container title">
+        <h1 data-test-id="org-oscypek-list-title">{{'OFFER.TITLE' | translate}}<span>🍠</span></h1>
+        <shepherdboy-org-offer-oscypek-list-filters data-test-id="org-oscypek-list-filters">
+        </shepherdboy-org-offer-oscypek-list-filters>
+    </div>
+    <div class="content-container">
+        <ng-container *ngIf="osycpekListView$ | async as vm">
+            <shepherdboy-org-ui-progress-bar *ngIf="vm.isLoading" data-test-id="org-oscypek-list-progress-bar">
+            </shepherdboy-org-ui-progress-bar>
+            <shepherdboy-org-ui-message *ngIf="vm.error" [type]="'error'" [message]="vm.error"
+                data-test-id="org-oscypek-list-error-message">
+            </shepherdboy-org-ui-message>
+            <shepherdboy-org-ui-message *ngIf="vm.items && vm.items.length === 0" [type]="'info'"
+                [message]="'OFFER.OSCYPEK_LIST.EMPTY' | translate" data-test-id="org-oscypek-list-empty-message">
+            </shepherdboy-org-ui-message>
+            <div *ngIf="vm.items && vm.items.length > 0" data-test-id="org-oscypek-list">
+                <ng-container *ngFor="let item of vm.items">
+                    <shepherdboy-org-offer-oscypek-item [oscypek]="item" data-test-id="org-oscypek-list-item">
+                    </shepherdboy-org-offer-oscypek-item>
+                </ng-container>
+            </div>
+        </ng-container>
+    </div>
+</div>

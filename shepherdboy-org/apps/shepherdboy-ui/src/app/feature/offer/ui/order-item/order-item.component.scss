@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--white-100);
+    border-radius: 30px;
+    padding: 5px;
+    border: 1px solid var(--grey-300);
+
+    &.secondary {
+        background-color: var(--purple-100);
+    }
+
+    .oscypek-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+
+        .details {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .additive-list-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--grey-100);
+        border: 1px solid var(--grey-300);
+        padding: 20px 00px;
+        border-radius: 25px;
+
+        .additive-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+
+            .details {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    }
+
+    h2 {
+        font-size: var(--font-l);
+        font-weight: var(--font-600);
+        color: var(--black-100);
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: var(--font-m);
+        font-weight: var(--font-500);
+        color: var(--black-100);
+        margin-bottom: 5px;
+    }
+}

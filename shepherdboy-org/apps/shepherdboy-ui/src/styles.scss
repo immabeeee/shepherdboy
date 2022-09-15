@@ -1,0 +1,199 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    outline-color: var(--blue-200);
+}
+
+body {
+    background: var(--grey-100);
+    background: linear-gradient(0deg, var(--grey-200) 0%, var(--white-100) 100%);
+}
+
+.org-select-panel {
+    background-color: var(--white-100) !important;
+    color: var(--black-100) !important;
+
+    .mat-option,
+    .mat-active {
+        color: var(--black-100) !important;
+
+        &:hover {
+            background-color: var(--grey-200) !important;
+        }
+    }
+
+    .mat-active {
+        background-color: var(--grey-300) !important;
+    }
+}
+
+.org-mat-chip {
+    .mat-chip {
+        background-color: var(--grey-300);
+        color: var(--black-100);
+    }
+}
+
+.org-form-field {
+    .mat-form-field-disabled {
+        opacity: 0.6 !important;
+    }
+
+    .mat-form-field-appearance-outline,
+    .mat-form-field-outline-thick {
+        color: var(--black-50) !important;
+    }
+
+    .mat-form-field-appearance-outline,
+    .mat-form-field-outline {
+        color: var(--black-50) !important;
+
+        input {
+            color: var(--black-100) !important;
+
+            &:active {
+                color: var(--purple-100) !important;
+            }
+
+            &::placeholder {
+                color: var(--black-50) !important;
+            }
+
+        }
+    }
+
+    .mat-input-element,
+    .mat-form-field-autofill-control {
+        color: var(--black-100) !important;
+    }
+
+    .mat-form-field-label,
+    .mat-form-field-empty {
+        color: var(--black-100) !important;
+    }
+}
+
+.org-table {
+    .mat-paginator {
+        background-color: var(--grey-200) !important;
+        border-radius: 20px;
+        border: 1px solid var(--grey-200) !important;
+    }
+
+    .mat-table {
+        background-color: var(--grey-100) !important;
+        border-radius: 20px;
+        overflow: hidden !important;
+        border: 1px solid var(--grey-200) !important;
+        border-bottom: 0;
+
+        .mat-cell,
+        .mat-footer-cell,
+        .mat-header-cell {
+            color: var(--black-100) !important;
+        }
+
+
+    }
+}
+
+.org-select {
+
+    .mat-select-min-line,
+    .mat-select-value-text .mat-form-field-flex .mat-select-placeholder .mat-select-arrow,
+    .mat-form-field-label {
+        color: var(--black-100) !important;
+    }
+
+    .mat-form-field-flex {
+        // background-color: var(--grey-200) !important;
+        background-color: transparent !important;
+        border: 1px solid var(--black-50) !important;
+    }
+
+    .mat-form-field-underline {
+        display: none;
+    }
+
+    &.mat-form-field-appearance-legacy {
+        .mat-form-field-underline {
+            display: none;
+        }
+    }
+}
+
+.org-flat-button {
+    color: var(--black-100) !important;
+    background-color: var(--grey-300) !important;
+
+    &.primary {
+        background-color: var(--purple-200) !important;
+        color: var(--white-100) !important;
+    }
+
+    &:disabled {
+        opacity: 0.7;
+    }
+
+}
+
+.mat-button.mat-primary.mat-button-disabled,
+.mat-button.mat-accent.mat-button-disabled,
+.mat-button.mat-warn.mat-button-disabled,
+.mat-button.mat-button-disabled.mat-button-disabled,
+.mat-icon-button.mat-primary.mat-button-disabled,
+.mat-icon-button.mat-accent.mat-button-disabled,
+.mat-icon-button.mat-warn.mat-button-disabled,
+.mat-icon-button.mat-button-disabled.mat-button-disabled,
+.mat-stroked-button.mat-primary.mat-button-disabled,
+.mat-stroked-button.mat-accent.mat-button-disabled,
+.mat-stroked-button.mat-warn.mat-button-disabled,
+.mat-stroked-button.mat-button-disabled.mat-button-disabled,
+.mat-paginator,
+.mat-paginator-page-size,
+.mat-select-trigger,
+.mat-paginator,
+.mat-paginator-page-size,
+.mat-select-trigger,
+.mat-select-arrow {
+    color: var(--black-100) !important;
+}
+
+.title {
+    h1 {
+        border-radius: 20px;
+        font-weight: var(--font-700);
+        font-size: var(--font-xxl);
+
+        span {
+            margin-left: 10px;
+        }
+    }
+}
+
+.org-dialog-container .mat-dialog-container {
+    border-radius: 20px !important;
+    background-color: var(--grey-200);
+}
+
+.tooltip-container {
+    background-color: var(--purple-200) !important;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 15px !important;
+}
+
+.mat-flat-button {
+    padding: 10px 30px !important;
+}
+
+.mat-drawer-container {
+    background-color: var(--grey-100);
+}

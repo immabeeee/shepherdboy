@@ -1,0 +1,53 @@
+<ng-container *ngIf="createOrderView$ | async as crv">
+    <shepherdboy-org-ui-progress-bar *ngIf="crv.isLoading"></shepherdboy-org-ui-progress-bar>
+</ng-container>
+
+<div class="container">
+    <div class="shipping-container">
+        <div class="header-container title">
+            <h1>{{'OFFER.ORDER_DETAILS_SHIPPING.TITLE' | translate}}
+            </h1>
+        </div>
+        <div class="content-container column">
+            <ng-container *ngIf="{shippingDetailsView: shippingDetailsView$ | async} as shippingDetails">
+                <ng-container *ngIf="shippingDetails.shippingDetailsView">
+                    <shepherdboy-org-shipping-details-form (submitResult)="handleSubmitResult($event)"
+                        [shippingDetails]="shippingDetails.shippingDetailsView.details">
+                    </shepherdboy-org-shipping-details-form>
+                </ng-container>
+            </ng-container>
+
+
+            <div *ngIf="{isOrderValid: isOrderValid$ | async} as vm" [matTooltipDisabled]="vm.isOrderValid"
+                [matTooltipPosition]="'above'" [matTooltipClass]="'tooltip-container'"
+                matTooltip="{{'OFFER.ORDER.DISABLED' | translate}}" color="primary" (click)="createOrder()"
+                class="button" data-test-id="org-order-details-create-order-button">
+                <button mat-flat-button color="primary" class="org-flat-button primary" [disabled]="!vm.isOrderValid"
+                    class="button">
+                    {{'OFFER.ORDER.LABEL' | translate}}
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="order-container">
+        <div class="header-container title">
+            <h1>{{'OFFER.ORDER_DETAILS_SUMMARY.TITLE' | translate}}</h1>
+        </div>
+        <div class="content-container">
+            <ng-container *ngIf="orderView$ | async as vm">
+                <shepherdboy-org-ui-message [type]="'info'"
+                    [message]="'OFFER.ORDER_DETAILS_SUMMARY.LIST.EMPTY' | translate"
+                    *ngIf="vm.items && vm.items.length === 0">
+                </shepherdboy-org-ui-message>
+                <div class="list" *ngIf="vm.items && vm.items.length > 0">
+                    <ng-container *ngFor="let item of vm.items; let odd = odd">
+                        <shepherdboy-org-offer-order-item [orderItem]="item" [isSecondary]="odd">
+                        </shepherdboy-org-offer-order-item>
+                    </ng-container>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+
+<shepherdboy-org-order-summary-info></shepherdboy-org-order-summary-info>

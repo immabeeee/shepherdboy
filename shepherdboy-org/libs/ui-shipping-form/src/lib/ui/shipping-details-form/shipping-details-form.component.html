@@ -1,0 +1,88 @@
+<div class="container">
+    <form [formGroup]="formGroup" class="org-form-field" *ngIf="formGroup">
+        <mat-form-field appearance="outline" class="org-form-field">
+            <mat-label>{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.FIRST_NAME.LABEL' | translate}}</mat-label>
+            <input matInput placeholder="{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.FIRST_NAME.PLACEHOLDER' | translate}}"
+                formControlName="firstName" data-test-id="org-shipping-form-firstName-input">
+            <small class="validation-error"
+                *ngIf="(f.firstName?.dirty || f.firstName?.touched) && f.firstName?.errors?.['required']">{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.REQUIRED'
+                |
+                translate}}</small>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="org-form-field">
+            <mat-label>{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.LAST_NAME.LABEL' | translate}}</mat-label>
+            <input matInput placeholder="{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.LAST_NAME.PLACEHOLDER' | translate}}"
+                formControlName="lastName" data-test-id="org-shipping-form-lastName-input">
+            <small class="validation-error"
+                *ngIf="(f.lastName?.dirty || f.lastName?.touched) && f.lastName?.errors?.['required']">{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.REQUIRED'
+                |
+                translate}}</small>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="org-form-field">
+            <mat-label>{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.CITY.LABEL' | translate}}</mat-label>
+            <input matInput placeholder="{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.CITY.PLACEHOLDER' | translate}}"
+                formControlName="city" data-test-id="org-shipping-form-city-input">
+            <small class="validation-error"
+                *ngIf="(f.city?.dirty || f.city?.touched) && f.city?.errors?.['required']">{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.REQUIRED'
+                |
+                translate}}</small>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="org-form-field">
+            <mat-label>{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.ZIP_CODE.LABEL' | translate}}</mat-label>
+            <input [textMask]="{mask: zipCodeMask}" matInput
+                placeholder="{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.ZIP_CODE.PLACEHOLDER' | translate}}"
+                formControlName="zipCode" data-test-id="org-shipping-form-zipCode-input">
+            <ng-container *ngIf="(f.zipCode?.dirty || f.zipCode?.touched)">
+                <small class="validation-error" *ngIf="f.zipCode?.errors?.['required']">
+                    {{'OFFER.ORDER_DETAILS_SHIPPING.FORM.REQUIRED'
+                    |
+                    translate}}
+                </small>
+                <small class="validation-error" *ngIf="f.zipCode?.errors?.['zipCodeInvalid']">
+                    {{'OFFER.ORDER_DETAILS_SHIPPING.FORM.ZIP_CODE_INVALID'
+                    |
+                    translate}}
+                </small>
+            </ng-container>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="org-form-field">
+            <mat-label>{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.STREET.LABEL' | translate}}</mat-label>
+            <input matInput placeholder="{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.STREET.PLACEHOLDER' | translate}}"
+                formControlName="street" data-test-id="org-shipping-form-street-input">
+            <small class="validation-error"
+                *ngIf="(f.street?.dirty || f.street?.touched) && f.street?.errors?.['required']">{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.REQUIRED'
+                |
+                translate}}</small>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="org-form-field">
+            <mat-label>{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.HOUSE_NUMBER.LABEL' | translate}}</mat-label>
+            <input matInput placeholder="{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.HOUSE_NUMBER.PLACEHOLDER' | translate}}"
+                formControlName="houseNumber" data-test-id="org-shipping-form-houseNumber-input">
+            <small class="validation-error"
+                *ngIf="(f.houseNumber?.dirty || f.houseNumber?.touched) && f.houseNumber?.errors?.['required']">{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.REQUIRED'
+                |
+                translate}}</small>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="org-form-field">
+            <mat-label>{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.APARTMENT_NUMBER.LABEL' | translate}}</mat-label>
+            <input matInput
+                placeholder="{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.APARTMENT_NUMBER.PLACEHOLDER' | translate}}"
+                formControlName="apartmentNumber" data-test-id="org-shipping-form-apartmentNumber-input">
+        </mat-form-field>
+        <ng-container *ngIf="!isViewMode">
+            <div *ngIf="!isDisabled" [matTooltipDisabled]="!isInvalid" [matTooltipPosition]="'above'"
+                [matTooltipClass]="'tooltip-container'"
+                matTooltip="{{'OFFER.ORDER_DETAILS_SHIPPING.FORM.DISABLED' | translate}}" color="primary"
+                (click)="submit()" class="button">
+                <button mat-flat-button color="primary" class="org-flat-button primary" [disabled]="isInvalid"
+                    class="button" data-test-id="org-shipping-form-save-button">
+                    {{'OFFER.ORDER_DETAILS_SHIPPING.FORM.SAVE' | translate}}
+                </button>
+            </div>
+            <button *ngIf="isDisabled" color="primary" mat-flat-button color="secondary"
+                class="org-flat-button secondary" class="button" (click)="enableForm()">
+                {{'OFFER.ORDER_DETAILS_SHIPPING.FORM.EDIT' | translate}}
+            </button>
+        </ng-container>
+    </form>
+</div>

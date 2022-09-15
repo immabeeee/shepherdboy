@@ -1,0 +1,72 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;900&family=Questrial&display=swap');
+
+// icons
+@import url('https://css.gg/sun.css');
+@import url('https://css.gg/moon.css');
+@import url('https://css.gg/shopping-cart.css');
+@import url('https://css.gg/close.css');
+@import url('https://css.gg/smile-mouth-open.css');
+@import url('https://css.gg/smile-no-mouth.css');
+@import url('https://css.gg/smile-none.css');
+@import url('https://css.gg/smile-sad.css');
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --white-100: #ffffff;
+    --grey-100: #FAFAFA;
+    --grey-200: #EFEFEF;
+    --grey-300: #E0E0E0;
+    --grey-400: #C1C1C1;
+    --black-50: #e0e0e0;
+    --black-100: #282828;
+    --black-200: #000000;
+    --yellow-50: #fff4b4;
+    --yellow-100: #E7C91F;
+    --purple-100: #FAF4FF;
+    --purple-200: #BD70F8;
+    --purple-300: #5f26da;
+    --green-100: #f4fffe;
+    --green-200: #6af8d9;
+
+    --box-shadow: rgb(224 224 224);
+
+    --error-100: #7a0000;
+    --error-200: #953535;
+    --warn-100: #c57e07;
+    --warn-200: #a96c06;
+    --info-100: #BD70F8;
+    --info-200: #a35bda;
+    --success-100: #01db72;
+    --success-200: #00ab58;
+
+    --font-900: 900;
+    --font-700: 700;
+    --font-600: 600;
+    --font-500: 500;
+    --font-400: 500;
+    --font-300: 300;
+
+    --font-xxl: 32px;
+    --font-xl: 24px;
+    --font-l: 18px;
+    --font-m: 16px;
+    --font-s: 13px;
+    --font-xs: 10px;
+    --font-xxs: 9px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: var(--white-100);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--white-100);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--grey-300)
+}

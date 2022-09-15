@@ -1,0 +1,70 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/shepherdboy-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "customWebpackConfig": {
+          "path": "./webpack.server.config.js"
+        },
+        "outputPath": "dist/apps/shepherdboy-api",
+        "main": "apps/shepherdboy-api/src/main.ts",
+        "tsConfig": "apps/shepherdboy-api/tsconfig.app.json",
+        "assets": [
+          "apps/shepherdboy-api/src/assets"
+        ]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/shepherdboy-api/src/environments/environment.ts",
+              "with": "apps/shepherdboy-api/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:node",
+      "options": {
+        "buildTarget": "shepherdboy-api:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "shepherdboy-api:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/shepherdboy-api/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/shepherdboy-api"
+      ],
+      "options": {
+        "jestConfig": "apps/shepherdboy-api/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

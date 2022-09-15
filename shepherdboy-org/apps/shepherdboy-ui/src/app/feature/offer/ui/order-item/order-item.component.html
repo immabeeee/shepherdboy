@@ -1,0 +1,62 @@
+<form [formGroup]="formGroup">
+    <div class="container" *ngIf="orderItem" [ngClass]="{'secondary': isSecondary}">
+        <div class="oscypek-container">
+            <div class="details">
+                <h2 data-test-id="org-order-item-oscypek-title">{{orderItem.oscypek.name}} ({{orderItem.oscypek.type}},
+                    {{orderItem.oscypek.size}})</h2>
+                <mat-form-field appearance="outline" class="org-form-field">
+                    <mat-label data-test-id="org-order-item-oscypek-quantity-label">
+                        {{'OFFER.ORDER_DETAILS_SUMMARY.FORM.QUANTITY.LABEL' | translate}}</mat-label>
+                    <input data-test-id="org-order-item-oscypek-quantity-input" formControlName="quantity" matInput
+                        type="number" placeholder="{{'OFFER.ORDER_DETAILS_SUMMARY.FORM.QUANTITY.LABEL' | translate}}">
+                </mat-form-field>
+            </div>
+            <div class="menu">
+                <button mat-fab color="primary"
+                    attr.aria-label="{{'OFFER.ORDER_DETAILS_SUMMARY.MENU.REMOVE.ARIA_LABEL' | translate}}"
+                    (click)="openAddAdditiveDialog()" data-test-id="org-order-item-oscypek-add-additive-button">
+                    <mat-icon>add</mat-icon>
+                </button>
+                <button mat-fab color="primary"
+                    attr.aria-label="{{'OFFER.ORDER_DETAILS_SUMMARY.MENU.REMOVE.ARIA_LABEL' | translate}}"
+                    (click)="removeOrderItem(orderItem.oscypek.id)"
+                    data-test-id="org-order-item-oscypek-delete-oscypek-button">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="additive-list-container" formArrayName="additives">
+            <shepherdboy-org-ui-message [type]="'info'"
+                [message]="'OFFER.ORDER_DETAILS_SUMMARY.LIST.ORDER_ITEM.ADDITIVES_LIST.EMPTY' | translate"
+                *ngIf="orderItem.additives && orderItem.additives.length === 0"
+                data-test-id="org-order-item-additive-list-empty">
+            </shepherdboy-org-ui-message>
+            <ng-container *ngIf="orderItem.additives && orderItem.additives.length > 0">
+                <ng-container *ngFor="let additive of orderItem.additives; let index = index">
+                    <div class="additive-container" [formGroupName]="index" data-test-id="org-order-item-additive-list">
+                        <div class="details" form>
+                            <h2 data-test-id="org-order-item-additive-title">{{additive.name}}</h2>
+                            <mat-form-field appearance="outline" class="org-form-field">
+                                <mat-label data-test-id="org-order-item-additive-quantity-label">
+                                    {{'OFFER.ORDER_DETAILS_SUMMARY.FORM.QUANTITY.LABEL' | translate}}
+                                </mat-label>
+                                <input formControlName="quantity" matInput type="number"
+                                    placeholder="{{'OFFER.ORDER_DETAILS_SUMMARY.FORM.QUANTITY.LABEL' | translate}}"
+                                    data-test-id="org-order-item-additive-quantity-input">
+                            </mat-form-field>
+                        </div>
+                        <div class="menu">
+                            <button mat-fab color="primary"
+                                attr.aria-label="{{'OFFER.ORDER_DETAILS_SUMMARY.MENU.REMOVE.ARIA_LABEL' | translate}}"
+                                (click)="removeOrderItemAdditive(orderItem.oscypek.id, additive.id)"
+                                data-test-id="org-order-item-additive-delete-button">
+                                <mat-icon>delete</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,15 @@
+<ng-container *ngIf="orderView$|async as vm">
+    <div class="floating-container" *ngIf="vm.items && vm.items.length > 0" [matTooltipPosition]="'left'"
+        [matTooltipClass]="'tooltip-container'" matTooltip="{{'OFFER.ORDER_SUMMARY.TOOLTIP' | translate}}"
+        (click)="openOrderPage()" data-test-id="org-order-summary-info">
+        <h1 data-test-id="org-order-summary-info-cost">{{vm.totalCost}}</h1>
+        <div class="cart-container">
+            <shepherdboy-org-ui-icon-button [icon]="'gg-shopping-cart'" [isSecondary]="true"
+                data-test-id="org-order-summary-info-cart-button">
+            </shepherdboy-org-ui-icon-button>
+            <span data-test-id="org-order-summary-info-amount">
+                {{vm.items.length}}
+            </span>
+        </div>
+    </div>
+</ng-container>

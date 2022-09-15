@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="header-container title" mat-dialog-title>
+        <h1 data-test-id="org-additive-dialog-title">{{'OFFER.ADDITIVE_DIALOG.TITLE' | translate}}</h1>
+    </div>
+    <div class="description-container">
+        <p data-test-id="org-additive-dialog-description">{{'OFFER.ADDITIVE_DIALOG.DESCRIPTION' | translate}}</p>
+    </div>
+
+    <div mat-dialog-content class="content-container">
+        <ng-container *ngIf="additiveListView$|async as vm">
+            <div class="list" *ngIf="vm.items && vm.items.length > 0" data-test-id="org-additive-dialog-list">
+                <ng-container *ngFor="let item of vm.items; let index = index;">
+                    <shepherdboy-org-offer-additive-item [additive]="item"
+                        [isActive]="item.id ? selectedAdditiveIds.includes(item.id) : false"
+                        (click)="selectAdditive(item)" data-test-id="org-additive-dialog-list-item">
+                    </shepherdboy-org-offer-additive-item>
+                </ng-container>
+            </div>
+        </ng-container>
+    </div>
+    <div class="menu-container">
+        <button mat-flat-button mat-dialog-close class="org-flat-button"
+            data-test-id="org-additive-dialog-close-button">{{'OFFER.ADDITIVE_DIALOG.CLOSE' |
+            translate}}</button>
+
+        <div [matTooltipDisabled]="!isAddButtonDisabled" [matTooltipPosition]="'above'"
+            [matTooltipClass]="'tooltip-container'"
+            matTooltip="{{'OFFER.ADDITIVE_DIALOG.ADD_DISABLED_TOOLTIP' | translate}}" color="primary"
+            (click)="submit()">
+            <button mat-flat-button color="primary" class="org-flat-button primary" [disabled]="isAddButtonDisabled"
+                data-test-id="org-additive-dialog-add-button">
+                {{'OFFER.ADDITIVE_DIALOG.ADD' | translate}}
+                <ng-container *ngIf="!isAddButtonDisabled">
+                    ({{selectedAdditives.length}})
+                </ng-container>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+mat-form-field {
+    width: 100%;
+}
+
+.button{
+    width: 100%;
+}
+
+.validation-error{
+    font-size: var(--font-xs);
+    font-weight: var(--font-700);
+    color: var(--error-200);
+}

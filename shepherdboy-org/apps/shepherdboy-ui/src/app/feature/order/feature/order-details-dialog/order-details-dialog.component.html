@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="header-container title" mat-dialog-title>
+        <h1>{{'ORDER.ORDER_DETAILS_DIALOG.TITLE' | translate}}</h1>
+    </div>
+
+    <div mat-dialog-content class="content-container">
+        <div>
+            <shepherdboy-org-shipping-details-form [shippingDetails]="data.order.shippingDetails" [isViewMode]="true">
+            </shepherdboy-org-shipping-details-form>
+        </div>
+        <div>
+            <shepherdboy-org-order-order-item-list [orderItems]="orderItems"></shepherdboy-org-order-order-item-list>
+        </div>
+    </div>
+    <div class="menu-container">
+        <button mat-flat-button mat-dialog-close class="org-flat-button">{{'ORDER.ORDER_DETAILS_DIALOG.CLOSE' |
+            translate}}</button>
+    </div>
+</div>

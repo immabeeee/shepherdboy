@@ -1,0 +1,49 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0px 5vw;
+    color: var(--black-100);
+    background-color: var(--white-100) !important;
+    border-bottom: 1px solid var(--grey-300);
+    height: 100px;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .user-container {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+
+        shepherdboy-org-ui-icon-button {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .menu-container {
+        height: 100%;
+
+        .menu-list {
+            height: 100%;
+            display: flex;
+
+            .menu-item {
+                height: 100%;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

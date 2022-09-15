@@ -1,0 +1,19 @@
+<div class="container" *ngIf="oscypek" (click)="openDialog()" attr.data-test-id="org-oscypek-item-{{oscypek.id}}">
+    <div class="image-placeholder" data-test-id="org-oscypek-item-image">
+        {{'No image' | translate}}
+    </div>
+    <h3 data-test-id="org-oscypek-item-name">{{oscypek.name}} </h3>
+    <p data-test-id="org-oscypek-item-available-amount">{{'OFFER.OSCYPEK_ITEM.LEFT' | translate}}:
+        {{oscypek.availableAmount}}</p>
+    <mat-chip-list aria-label="Oscypek selection" class="org-mat-chip">
+        <mat-chip data-test-id="org-oscypek-item-type">
+            <span matChipAvatar>🔥</span>
+            {{oscypek.type | translate}}
+        </mat-chip>
+        <mat-chip data-test-id="org-oscypek-item-size">
+            <span matChipAvatar>🍽</span>
+            {{oscypek.size | translate}}
+        </mat-chip>
+    </mat-chip-list>
+    <h2 data-test-id="org-oscypek-item-price">{{oscypek.price}}</h2>
+</div>

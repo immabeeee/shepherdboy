@@ -1,0 +1,12 @@
+.container {
+    mat-form-field {
+        color: var(--black-100) !important;
+    }
+
+    form {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+}

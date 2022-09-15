@@ -1,0 +1,9 @@
+<div class="container" *ngIf="additive" [ngClass]="{
+    active: isActive
+  }" data-test-id="org-additive-item">
+  <div class="image-placeholder" data-test-id="org-additive-item-image">
+    {{'No image' | translate}}
+  </div>
+  <h3 data-test-id="org-additive-item-name">{{additive.name}}</h3>
+  <h2 data-test-id="org-additive-item-price">{{additive.price}}</h2>
+</div>

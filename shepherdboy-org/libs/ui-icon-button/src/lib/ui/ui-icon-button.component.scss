@@ -1,0 +1,66 @@
+.button {
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    color: var(--black-100);
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    &:hover {
+        background: #0000001e;
+        transition: 0.2s;
+        animation: primary 2s infinite forwards ease-in-out;
+    }
+
+    &.secondary {
+        color: var(--white-100);
+    }
+
+    &:active,
+    &:focus {
+        animation: primary 2s infinite forwards ease-in-out;
+        animation: click 0.3s normal forwards ease-in-out;
+    }
+
+    &.disabled {
+        opacity: 50%;
+        cursor: default;
+        animation: none;
+    }
+}
+
+@keyframes primary {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
+}
+
+@keyframes click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

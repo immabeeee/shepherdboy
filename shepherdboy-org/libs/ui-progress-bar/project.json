@@ -1,0 +1,54 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/ui-progress-bar/src",
+  "prefix": "shepherdboy-org",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui-progress-bar"],
+      "options": {
+        "jestConfig": "libs/ui-progress-bar/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-progress-bar/**/*.ts",
+          "libs/ui-progress-bar/**/*.html"
+        ]
+      }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/ui-progress-bar/.storybook",
+        "browserTarget": "ui-progress-bar:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/ui-progress-bar",
+        "configDir": "libs/ui-progress-bar/.storybook",
+        "browserTarget": "ui-progress-bar:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

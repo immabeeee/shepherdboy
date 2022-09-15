@@ -1,0 +1,8 @@
+<svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="201" height="37" viewBox="0 0 201 37">
+  <g id="Group_1" data-name="Group 1" transform="translate(-140 -58)">
+    <g id="Group_1-2" data-name="Group 1" transform="translate(-40)">
+      <text id="Shepherdboy" transform="translate(192 86)" fill="#333" font-size="27" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Shepherd</tspan><tspan y="0" font-family="Poppins-Black, Poppins" font-weight="800">boy</tspan></text>
+    </g>
+  </g>
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="7" height="7" transform="translate(0 21)" fill="#bb6af8"/>
+</svg>

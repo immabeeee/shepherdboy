@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "api-interfaces": "libs/api-interfaces",
+    "shepherdboy-api": "apps/shepherdboy-api",
+    "shepherdboy-ui": "apps/shepherdboy-ui",
+    "shepherdboy-ui-e2e": "apps/shepherdboy-ui-e2e",
+    "test-utils": "libs/test-utils",
+    "theme": "libs/theme",
+    "ui-icon-button": "libs/ui-icon-button",
+    "ui-message": "libs/ui-message",
+    "ui-progress-bar": "libs/ui-progress-bar",
+    "ui-shipping-form": "libs/ui-shipping-form",
+    "utils": "libs/utils"
+  }
+}
