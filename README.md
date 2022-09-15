@@ -4,7 +4,7 @@
 
 [![Logo](https://raw.githubusercontent.com/immabeeee/shepherdboy/db79beeb63990960910f17514a05d3e86ddf67d2/shepherdboy-org/apps/shepherdboy-ui/src/assets/images/logo.svg)](https://github.com/immabeeee/shepherdboy/)
 
-<a name="screenshot1" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png?raw=true" alt="Screenshot #1"/>
+<a name="screenshot1" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png?raw=true" alt="Screenshot #1"></a>
 
 Before you start , it's a good idea to look in the <a href="https://github.com/immabeeee/shepherdboy/tree/main/shepherdboy-org/documentation">documentation folder</a>. There you will find a <a href="https://github.com/immabeeee/shepherdboy/tree/main/shepherdboy-org/documentation/videos">video</a> file with a presentation of the application, postman collections and few screenshots
 
