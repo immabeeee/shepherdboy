@@ -8,7 +8,7 @@ Before you start , it's a good idea to look in the documentation folder. There y
 
 - [![Angular][angular.io]][angular-url]
 - [![Nx][nx.dev]][nx-url]
-- [![Typescript][typescriptland.org]][typescirpt-url]
+- [![Typescript][typescript.io]][typescript-url]
 - [![NestJs][nestjs.com]][nestjs-url]
 - [![Jest][jestjs.io]][jest-url]
 - [![Storybook][storybook.js.org]][storybook-url]
@@ -112,7 +112,7 @@ nx g @nrwl/angular:storybook-configuration PROJECT_NAME
 [angular-url]: https://github.com/angular
 [nx.dev]: https://img.shields.io/badge/nx_workspace-002E52?style=for-the-badge&logo=nx&logoColor=white
 [nx-url]: https://nx.dev
-[typescriptlang.org]: https://img.shields.io/badge/typescript-3178c6?style=for-the-badge&logo=typescript&logoColor=white
+[typescript.io]: https://img.shields.io/badge/typescript-3178c6?style=for-the-badge&logo=typescript&logoColor=white
 [typescript-url]: https://www.typescriptlang.org/
 [nestjs.com]: https://img.shields.io/badge/nest_js-ea2845?style=for-the-badge&logo=nestjs&logoColor=white
 [nestjs-url]: https://nestjs.com/
