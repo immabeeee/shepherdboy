@@ -7,7 +7,6 @@ describe('Offer', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should create an order', () => {
-    // login admin user
     offerListHelpers.checkIfOfferListElementsExist();
     offerListHelpers.getFirstItem().click();
     additivesPopupHelpers.checkIfElementsExist();

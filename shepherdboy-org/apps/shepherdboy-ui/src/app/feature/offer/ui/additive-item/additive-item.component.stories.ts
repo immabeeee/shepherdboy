@@ -10,10 +10,12 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [
+        testData.StorybookWrapperModule,
         TranslateTestingModule.withTranslations('us', testData.TRANSLATIONS_US),
         AdditiveItemModule,
       ],
     }),
+    testData.addDefaultWrapper(),
   ],
 } as Meta<AdditiveItemComponent>;
 

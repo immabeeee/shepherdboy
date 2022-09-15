@@ -9,3 +9,14 @@ export const orderItem: OrderItem = {
   },
   additives: [{ ...additive, quantity: 12 }],
 };
+
+export const anotherOrderItem: OrderItem = {
+  oscypek: {
+    ...{ ...oscypek, id: 'lorem0', price: 13.33 },
+    quantity: 5,
+  },
+  additives: [
+    { ...{ ...additive, id: 'lorem', price: 20.23 }, quantity: 2 },
+    { ...{ ...additive, id: 'lorem2', price: 23.23 }, quantity: 5 },
+  ],
+};

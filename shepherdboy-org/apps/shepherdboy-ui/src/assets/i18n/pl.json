@@ -91,7 +91,10 @@
       "DESCRIPTION": "Wybierz swój ulubiony dodatek, polecamy Pesto z czosnku niedźwiedziego 🥰",
       "ADD": "Dodaj",
       "ADD_DISABLED_TOOLTIP": "Musisz wybrać przynajmniej jeden dodatek",
-      "CLOSE": "Bez dodatku"
+      "CLOSE": "Bez dodatku",
+      "ADDITIVE_LIST": {
+        "EMPTY": "Nie ma żadnych dodatków"
+      }
     },
     "ORDER": {
       "LABEL": "Zamów teraz",
@@ -100,6 +103,7 @@
   },
   "ORDER": {
     "ORDER_LIST": {
+      "EMPTY": "Brak wyników",
       "TITLE": "Zamówienia",
       "HEADER": {
         "POSITION": "Lp.",

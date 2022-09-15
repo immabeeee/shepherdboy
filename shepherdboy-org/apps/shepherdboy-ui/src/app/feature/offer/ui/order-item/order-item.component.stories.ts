@@ -4,9 +4,7 @@ import { OrderItemComponent } from './order-item.component';
 import { OfferService } from '../../data-access/offer.service';
 import { provideMockStore } from '@ngrx/store/testing';
 import { initialOfferState } from '../../data-access/state/offer.reducer';
-import {
-  getAdditiveListView,
-} from '../../data-access/state/offer.selectors';
+import { getAdditiveListView } from '../../data-access/state/offer.selectors';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OfferStateFacade } from '../../data-access/state/offer.facade';
 import { OrderItemModule } from './order-item.module';
@@ -19,6 +17,7 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [
+        testData.StorybookWrapperModule,
         TranslateTestingModule.withTranslations('us', testData.TRANSLATIONS_US),
         OrderItemModule,
         BrowserAnimationsModule,
@@ -42,6 +41,7 @@ export default {
         }),
       ],
     }),
+    testData.addDefaultWrapper(),
   ],
 } as Meta<OrderItemComponent>;
 

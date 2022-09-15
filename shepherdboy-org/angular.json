@@ -4,6 +4,7 @@
   "projects": {
     "api-interfaces": "libs/api-interfaces",
     "shepherdboy-api": "apps/shepherdboy-api",
+    "shepherdboy-api-e2e": "apps/shepherdboy-api-e2e",
     "shepherdboy-ui": "apps/shepherdboy-ui",
     "shepherdboy-ui-e2e": "apps/shepherdboy-ui-e2e",
     "test-utils": "libs/test-utils",

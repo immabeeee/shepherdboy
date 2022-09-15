@@ -22,10 +22,13 @@ export class OscypekListFiltersFormService {
   }
 
   public fillForm(form: FormGroup, filters?: Filter[]): void {
-    if (!filters) return;
     form.patchValue({
-      size: filters.find((e) => e.name === OscypekListFilter.SIZE)?.value,
-      type: filters.find((e) => e.name === OscypekListFilter.TYPE)?.value,
+      size: filters
+        ? filters.find((e) => e.name === OscypekListFilter.SIZE)?.value
+        : null,
+      type: filters
+        ? filters.find((e) => e.name === OscypekListFilter.TYPE)?.value
+        : null,
     });
   }
 }

@@ -91,7 +91,10 @@
       "DESCRIPTION": "Choose your favorite addition, we recommend Wild Garlic Pesto 🥰",
       "ADD": "Add",
       "ADD_DISABLED_TOOLTIP": "You must choose at least one add-on",
-      "CLOSE": "No addition"
+      "CLOSE": "No addition",
+      "ADDITIVE_LIST": {
+        "EMPTY": "There is no add ons"
+      }
     },
     "ORDER": {
       "LABEL": "Order now",
@@ -100,6 +103,7 @@
   },
   "ORDER": {
     "ORDER_LIST": {
+      "EMPTY": "No records",
       "TITLE": "Orders",
       "HEADER": {
         "POSITION": "No.",

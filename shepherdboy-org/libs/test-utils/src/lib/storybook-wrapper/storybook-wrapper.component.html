@@ -1,0 +1,9 @@
+<section>
+    <ng-content></ng-content>
+    <div class="menu-container">
+        <shepherdboy-org-ui-icon-button [icon]="currentTheme === 'primary' ? 'gg-sun' : 'gg-moon'"
+            (click)="handleChangeTheme()" data-test-id="org-navbar-menu-theme-button"
+            data-test-id="org-nav-menu-theme-button">
+        </shepherdboy-org-ui-icon-button>
+    </div>
+</section>

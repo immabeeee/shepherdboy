@@ -8,6 +8,16 @@
 
     <div mat-dialog-content class="content-container">
         <ng-container *ngIf="additiveListView$|async as vm">
+            <shepherdboy-org-ui-progress-bar *ngIf="vm.isLoading" data-test-id="org-additive-dialog-list-progress-bar">
+            </shepherdboy-org-ui-progress-bar>
+            <shepherdboy-org-ui-message *ngIf="vm.error" [type]="'error'" [message]="vm.error"
+                data-test-id="org-additive-dialog-list-error-message">
+            </shepherdboy-org-ui-message>
+            <shepherdboy-org-ui-message *ngIf="vm.items && vm.items.length === 0" [type]="'info'"
+                [message]="'OFFER.ADDITIVE_DIALOG.ADDITIVE_LIST.EMPTY' | translate"
+                data-test-id="org-additive-dialog-list-empty-message">
+            </shepherdboy-org-ui-message>
+
             <div class="list" *ngIf="vm.items && vm.items.length > 0" data-test-id="org-additive-dialog-list">
                 <ng-container *ngFor="let item of vm.items; let index = index;">
                     <shepherdboy-org-offer-additive-item [additive]="item"

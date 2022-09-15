@@ -1,0 +1,12 @@
+section {
+    position: relative;
+
+    .menu-container {
+        padding: 20px;
+        border-radius: 20px;
+        background-color: var(--grey-100);
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+    }
+}

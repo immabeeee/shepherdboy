@@ -6,6 +6,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { AdditiveItemModule } from '../../ui/additive-item/additive-item.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { UiProgressBarModule } from '@shepherdboy-org/ui-progress-bar';
+import { UiMessageModule } from '@shepherdboy-org/ui-message';
 
 const materialModules = [MatDialogModule, MatButtonModule, MatTooltipModule];
 
@@ -15,6 +17,8 @@ const materialModules = [MatDialogModule, MatButtonModule, MatTooltipModule];
     CommonModule,
     TranslateModule,
     AdditiveItemModule,
+    UiProgressBarModule,
+    UiMessageModule,
     ...materialModules,
   ],
   exports: [AdditiveDialogComponent],

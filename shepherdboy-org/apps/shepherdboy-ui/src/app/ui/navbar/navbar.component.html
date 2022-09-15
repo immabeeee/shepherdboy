@@ -1,31 +1,29 @@
 <nav class="nav-container">
     <div class="logo-container">
-        <img src="assets/images/{{currentTheme === 'primary' ? 'logo' : 'dark-logo'}}.svg">
+        <img src="assets/images/{{currentTheme === 'primary' ? 'logo' : 'dark-logo'}}.svg" data-test-id="org-nav-logo">
     </div>
     <div class="menu-container">
         <ul class="menu-list" data-test-id="org-nav-menu-list">
             <li class="menu-item">
-                <a mat-button routerLinkActive #rla="routerLinkActive" [routerLink]="['./', ROUTE_LINK.HOME]" [ngClass]="{
-                    'active': rla.isActive
-                  }">{{'NAVBAR.HOME' | translate}}</a>
                 <a mat-button routerLinkActive #rla="routerLinkActive" [routerLink]="['./', ROUTE_LINK.OFFER]"
                     [ngClass]="{
                     'active': rla.isActive
-                  }">{{'NAVBAR.OFFER' | translate}}</a>
+                  }" data-test-id="org-nav-menu-link-offer">{{'NAVBAR.OFFER' | translate}}</a>
                 <a mat-button routerLinkActive #rla="routerLinkActive" [routerLink]="['./', ROUTE_LINK.ORDER_REGISTRY]"
                     [ngClass]="{
                     'active': rla.isActive
-                  }">{{'NAVBAR.ORDER_REGISTRY' | translate}}</a>
+                  }" data-test-id="org-nav-menu-link-order-registry">{{'NAVBAR.ORDER_REGISTRY' | translate}}</a>
             </li>
         </ul>
     </div>
     <div class="user-container">
-        <shepherdboy-org-ui-icon-button (click)="toggleLang()" data-test-id="org-navbar-menu-flag-button">
+        <shepherdboy-org-ui-icon-button (click)="toggleLang()" data-test-id="org-nav-menu-lang-button">
             <img src="assets/images/{{currentLang}}.svg">
         </shepherdboy-org-ui-icon-button>
 
         <shepherdboy-org-ui-icon-button [icon]="currentTheme === 'primary' ? 'gg-sun' : 'gg-moon'"
-            (click)="handleChangeTheme()" data-test-id="org-navbar-menu-theme-button">
+            (click)="handleChangeTheme()" data-test-id="org-navbar-menu-theme-button"
+            data-test-id="org-nav-menu-theme-button">
         </shepherdboy-org-ui-icon-button>
     </div>
 </nav>

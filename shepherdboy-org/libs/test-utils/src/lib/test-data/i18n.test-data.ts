@@ -93,6 +93,9 @@ export const TRANSLATIONS_PL = {
       ADD: 'Add',
       ADD_DISABLED_TOOLTIP: 'You must choose at least one add-on',
       CLOSE: 'No addition',
+      ADDITIVE_LIST: {
+        EMPTY: 'There is no add-ons',
+      },
     },
     ORDER: {
       LABEL: 'Order now',
@@ -102,6 +105,7 @@ export const TRANSLATIONS_PL = {
   },
   ORDER: {
     ORDER_LIST: {
+      EMPTY: 'No records',
       TITLE: 'Orders',
       HEADER: {
         POSITION: 'No.',
@@ -240,6 +244,9 @@ export const TRANSLATIONS_US = {
       ADD: 'Add',
       ADD_DISABLED_TOOLTIP: 'You must choose at least one add-on',
       CLOSE: 'No addition',
+      ADDITIVE_LIST: {
+        EMPTY: 'There is no add-ons',
+      },
     },
     ORDER: {
       LABEL: 'Order now',
@@ -249,6 +256,7 @@ export const TRANSLATIONS_US = {
   },
   ORDER: {
     ORDER_LIST: {
+      EMPTY: 'No records',
       TITLE: 'Orders',
       HEADER: {
         POSITION: 'No.',

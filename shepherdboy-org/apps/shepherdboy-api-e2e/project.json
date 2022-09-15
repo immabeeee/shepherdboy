@@ -1,0 +1,51 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/shepherdboy-api-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "builder": "@nrwl/node:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/shepherdboy-api-e2e",
+        "main": "apps/shepherdboy-api-e2e/src/main.ts",
+        "tsConfig": "apps/shepherdboy-api-e2e/tsconfig.app.json",
+        "assets": ["apps/shepherdboy-api-e2e/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/shepherdboy-api-e2e/src/environments/environment.ts",
+              "with": "apps/shepherdboy-api-e2e/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "builder": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "shepherdboy-api-e2e:build"
+      }
+    },
+    "lint": {
+      "builder": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/shepherdboy-api-e2e/**/*.ts"]
+      }
+    },
+    "test": {
+      "builder": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/shepherdboy-api-e2e"],
+      "options": {
+        "jestConfig": "apps/shepherdboy-api-e2e/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

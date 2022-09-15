@@ -53,14 +53,26 @@ To get a local copy up and running follow these simple example steps.
    POSTGRES_DB = shepherdboy;
    ```
 4. Serve API
+
    ```sh
    nx run shepherdboy-api:serve
    ```
-5. Serve UI
+
+5. To add data to the database, you can use Postman and the collection that can be found here (sherherdboy-org/documentation/postman-collections), or fire the e2e api tests.
+
+   ```sh
+   sherherdboy-org/documentation/postman-collections
+   ```
+
+   ```sh
+   npm run test:api:e2e
+   ```
+
+6. Serve UI
    ```sh
    nx run start
    ```
-   <!-- ROADMAP -->
+   <!-- HELP COMMANDS -->
 
 ## Help commands
 
@@ -82,24 +94,38 @@ nx run PROJECT_NAME:test
 nx run PROJECT_NAME:storybook
 ```
 
-4. Generate storybook configuration:
+4. Run API e2e:
+
+```sh
+npm run test:api:e2e
+```
+
+5. Run UI e2e:
+
+```sh
+nx e2e PROJECT_NAME --watch
+```
+
+6. Generate storybook configuration:
 
 ```sh
 nx g @nrwl/angular:storybook-configuration PROJECT_NAME
 ```
 
+<!-- ROADMAP -->
+
 ## Roadmap
 
 - [x] Add Shop UI Module
-- [ ] Unit tests for Shop UI Module
-- [ ] Storybook stories for Shop UI Module
+- [x] Unit tests for Shop UI Module
+- [x] Storybook stories for Shop UI Module
 - [x] e2e happy path for Shop UI Module
 - [x] Add Order Registry UI Module
 - [ ] Unit tests for Order Registry UI Module
 - [ ] Storybook stories Order Registry UI Module
 - [ ] e2e happy path for Order Registry UI Module
-- [ ] Add API
-- [ ] Create Postman collection for API
+- [x] Add API
+- [x] Create Postman collection for API
 - [ ] Unit tests for API
 - [ ] e2e tests for API
 - [x] Multi-language Support
@@ -125,4 +151,3 @@ nx g @nrwl/angular:storybook-configuration PROJECT_NAME
 [storybook-url]: https://storybook.js.org
 [cypress.io]: https://img.shields.io/badge/cypress-04c38e?style=for-the-badge&logo=cypress&logoColor=white
 [cypress-url]: https://cypress.io
-[mountain-image-credits-url]: https://all-free-download.com/free-vector/download/mountain_range_background_312045.html#google_vignette
