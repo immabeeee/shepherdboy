@@ -6,6 +6,8 @@
 
 [![Screenshot1](https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png?raw=true=400x300)](https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png)
 
+[![Screenshot2](https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/2.png?raw=true=400x300)](https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/2.png)
+
 Before you start , it's a good idea to look in the documentation folder. There you will find a video file with a presentation of the application and postman collections
 
 ### Built With
