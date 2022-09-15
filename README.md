@@ -6,7 +6,7 @@
 
 <a name="screenshot1" href="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png"><img align="center" src="https://github.com/immabeeee/shepherdboy/blob/main/shepherdboy-org/documentation/screenshots/1.png?raw=true" alt="Screenshot #1"/>
 
-Before you start , it's a good idea to look in the documentation folder. There you will find a video file with a presentation of the application and postman collections
+Before you start , it's a good idea to look in the <a href="https://github.com/immabeeee/shepherdboy/tree/main/shepherdboy-org/documentation">documentation folder</a>. There you will find a <a href="https://github.com/immabeeee/shepherdboy/tree/main/shepherdboy-org/documentation/videos">video</a> file with a presentation of the application, postman collections and few screenshots
 
 ### Built With
 
