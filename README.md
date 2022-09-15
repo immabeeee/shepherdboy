@@ -2,6 +2,8 @@
 
 ## About The Project
 
+Before you start , it's a good idea to look in the documentation folder. There you will find a video file with a presentation of the application and postman collections
+
 ### Built With
 
 - [![Angular][angular.io]][angular-url]
@@ -85,23 +87,24 @@ nx g @nrwl/angular:storybook-configuration PROJECT_NAME
 
 ## Roadmap
 
-- [X] Add Shop UI Module
+- [x] Add Shop UI Module
 - [ ] Unit tests for Shop UI Module
 - [ ] Storybook stories for Shop UI Module
-- [X] e2e happy path for Shop UI Module
-- [X] Add Order Registry UI Module
+- [x] e2e happy path for Shop UI Module
+- [x] Add Order Registry UI Module
 - [ ] Unit tests for Order Registry UI Module
 - [ ] Storybook stories Order Registry UI Module
 - [ ] e2e happy path for Order Registry UI Module
 - [ ] Add API
+- [ ] Create Postman collection for API
 - [ ] Unit tests for API
 - [ ] e2e tests for API
-- [X] Multi-language Support
-  - [X] Polish
-  - [X] English
-- [X] Multi-theme Support
-  - [X] Light
-  - [X] Dark
+- [x] Multi-language Support
+  - [x] Polish
+  - [x] English
+- [x] Multi-theme Support
+  - [x] Light
+  - [x] Dark
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
