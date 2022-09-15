@@ -5,6 +5,12 @@
 ### Built With
 
 - [![Angular][angular.io]][angular-url]
+- [![Nx][nx.dev]][nx-url]
+- [![Typescript][typescriptland.org]][typescirpt-url]
+- [![NestJs][nestjs.com]][nestjs-url]
+- [![Jest][jestjs.io]][jest-url]
+- [![Storybook][storybook.js.org]][storybook-url]
+- [![Cypress][cypress.io]][cypress-url]
 
 <!-- GETTING STARTED -->
 
@@ -56,23 +62,61 @@ To get a local copy up and running follow these simple example steps.
 1. Run e2e:
 
 ```sh
-nx e2e shepherdboy-ui-e2e --watch
+nx e2e PROJECT_NAME --watch
+```
+
+2. Run unit tests:
+
+```sh
+nx run PROJECT_NAME:test
+```
+
+3. Run storybook:
+
+```sh
+nx run PROJECT_NAME:storybook
+```
+
+4. Generate storybook configuration:
+
+```sh
+nx g @nrwl/angular:storybook-configuration PROJECT_NAME
 ```
 
 ## Roadmap
 
-- [ ] Add Shop UI Module
-- [ ] Add Order Registry UI Module
+- [X] Add Shop UI Module
+- [ ] Unit tests for Shop UI Module
+- [ ] Storybook stories for Shop UI Module
+- [X] e2e happy path for Shop UI Module
+- [X] Add Order Registry UI Module
+- [ ] Unit tests for Order Registry UI Module
+- [ ] Storybook stories Order Registry UI Module
+- [ ] e2e happy path for Order Registry UI Module
 - [ ] Add API
-- [ ] Multi-language Support
-  - [ ] Polish
-  - [ ] English
-- [ ] Multi-theme Support
-  - [ ] Light
-  - [ ] Dark
+- [ ] Unit tests for API
+- [ ] e2e tests for API
+- [X] Multi-language Support
+  - [X] Polish
+  - [X] English
+- [X] Multi-theme Support
+  - [X] Light
+  - [X] Dark
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
 [angular-url]: https://github.com/angular
+[nx.dev]: https://img.shields.io/badge/nx_workspace-002E52?style=for-the-badge&logo=nx&logoColor=white
+[nx-url]: https://nx.dev
+[typescriptlang.org]: https://img.shields.io/badge/typescript-3178c6?style=for-the-badge&logo=typescript&logoColor=white
+[typescript-url]: https://www.typescriptlang.org/
+[nestjs.com]: https://img.shields.io/badge/nest_js-ea2845?style=for-the-badge&logo=nestjs&logoColor=white
+[nestjs-url]: https://nestjs.com/
+[jestjs.io]: https://img.shields.io/badge/jest-15c213?style=for-the-badge&logo=jest&logoColor=white
+[jest-url]: https://jestjs.io
+[storybook.js.org]: https://img.shields.io/badge/storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white
+[storybook-url]: https://storybook.js.org
+[cypress.io]: https://img.shields.io/badge/cypress-04c38e?style=for-the-badge&logo=cypress&logoColor=white
+[cypress-url]: https://cypress.io
 [mountain-image-credits-url]: https://all-free-download.com/free-vector/download/mountain_range_background_312045.html#google_vignette
