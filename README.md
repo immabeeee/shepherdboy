@@ -41,6 +41,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 2. Install NPM packages
    ```sh
+   cd shepherdboy-org
    npm install
    ```
 3. Create a database based on config `apps/shepherdboy-api/.env`
