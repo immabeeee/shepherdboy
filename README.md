@@ -2,7 +2,7 @@
 
 ## About The Project
 
-[![Logo](https://raw.githubusercontent.com/immabeeee/shepherdboy/db79beeb63990960910f17514a05d3e86ddf67d2/shepherdboy-org/apps/shepherdboy-ui/src/assets/images/logo.svg=400x250)](https://github.com/immabeeee/shepherdboy/)
+[![Logo](https://raw.githubusercontent.com/immabeeee/shepherdboy/db79beeb63990960910f17514a05d3e86ddf67d2/shepherdboy-org/apps/shepherdboy-ui/src/assets/images/logo.svg)](https://github.com/immabeeee/shepherdboy/)
 
 Before you start , it's a good idea to look in the documentation folder. There you will find a video file with a presentation of the application and postman collections
 
