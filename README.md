@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone
+   git clone https://github.com/immabeeee/shepherdboy.git
    ```
 2. Install NPM packages
    ```sh
